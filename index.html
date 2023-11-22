@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup form</title>
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <h3>Form </h3> 
+<form action="#">
+ <label for="name">Name : </label>
+ <input type="text" id="name"><br>
+ <br>
+ <label for="Email">Email : </label>
+ <input type="email" id="email"><br>
+ <br>
+ <label for="number">Number : </label>
+ <input type="number" id="number"><br>
+ <br>
+
+<button  onclick="showvalue()">Show Value</button>
+</form>
+
+<h4 id="displayname"></h4>
+<h4 id="displayemail"></h4>
+<h4 id="displaynumber"></h4> 
+
+   <h3>Text</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis
+      minima id alias! Quisquam perspiciatis inventore tenetur assumenda sit ex.
+    </p>
+    <p class="hide" id="hide">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quibusdam
+        nam dolorem dignissimos officia, cupiditate quaerat! Nisi quia, numquam
+        ipsam enim, magni nulla corporis quasi commodi cumque alias harum minus!
+      </p>
+    <button onclick="showmore()" id="showbutton">Read more</button>
+    <button onclick="showless()" id="hidebutton">Read Less</button>
+   <br><br><br>
+    
+
+   <h3>Table</h3>
+    <table border="1" cellpadding="15" >
+      <tr>
+        <td >Name </td>
+        <td> Class</td>
+        <td> Sec</td>
+        <td> Year </td>
+        <td> Edit/Delete</td>
+
+      </tr>
+      <tr class="row1" id="row1">
+        <td >Ali </td>
+        <td>2</td>
+        <td>A</td>
+        <td>2023</td>
+        <td>
+          <button onclick="editrecord(('row1'))" class="editbtn">edit</button> 
+          <button onclick="deleterecord(('row1'))" class="deletebtn">delete</button>
+        </td>
+      </tr>
+      <tr class="row2" id="row2" >
+          <td >Hafeez</td>
+        <td>6</td>
+        <td>C</td>
+        <td>2021</td>
+        <td><button onclick="editrecord(('row2'))" class="editbtn">edit</button> 
+          <button onclick="deleterecord(('row2'))" class="deletebtn">delete</button></td>
+      </tr>
+      <tr class="row3" id="row3" >
+        <td >Basit </td>
+        <td>6</td>
+        <td>C</td>
+        <td>2021</td>
+        <td><button onclick="editrecord(('row3'))" class="editbtn">edit</button> 
+          <button onclick="deleterecord(('row3'))" class="deletebtn">delete</button></td>
+      </tr>
+    </table>
+    <script src="app.js"></script>
+  </body>
+</html>
